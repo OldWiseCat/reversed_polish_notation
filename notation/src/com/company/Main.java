@@ -29,14 +29,13 @@ public class Main {
         /*1-I 2-II 3-III 4-IV 5-V 6-VI 7-VII 8-VIII 9-IX 10-X
         11-XI 12-XII 13-XIII 14-XIV 15-XV 16-XVI 17-XVII 18-XVIII
         19-XIX 20-XX*/
-        dict.put(new String("I"), 1);
-        dict.put(new String("IX"), 9);
-        dict.put(new String("VII"), 7);
-        dict.put(new String("XX"), 20);
-        dict.put(new String("XVII"), 17);
-        dict.put(new String("II"), 2);
-        dict.put(new String("XI"), 11);
-        int result;
+        dict.put("I", 1);
+        dict.put("IX", 9);
+        dict.put("VII", 7);
+        dict.put("XX", 20);
+        dict.put("XVII", 17);
+        dict.put("II", 2);
+        dict.put("XI", 11);
         for (String arg: args) {
             if (dict.containsKey(arg)) {
                 stack.push(dict.get(arg));
