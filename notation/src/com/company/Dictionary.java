@@ -12,8 +12,8 @@ import java.util.Vector;
  * Time: 20:25
  * To change this template use File | Settings | File Templates.
  */
-public class dictionary implements Map {
-    private Vector<Struct> vault = new Vector<Struct>();
+public class Dictionary implements Map {
+    private Vector<Struct<String, Integer>> vault = new Vector<Struct<String, Integer>>();
     @Override
     public int size() {
         return vault.size();

@@ -7,10 +7,10 @@ package com.company;
  * Time: 20:33
  * To change this template use File | Settings | File Templates.
  */
-public class Struct {
-    private Object key;
-    private Object value;
-    Struct(Object key, Object value) {
+public class Struct<T, Y> {
+    private T key;
+    private Y value;
+    Struct(T key, Y value) {
         this.key = key;
         this.value = value;
     }
@@ -20,10 +20,10 @@ public class Struct {
     public Object value() {
         return this.value;
     }
-    public void setKey(Object key) {
+    public void setKey(T key) {
         this.key = key;
     }
-    public void setValue(Object value) {
+    public void setValue(Y value) {
         this.value = value;
     }
 }
